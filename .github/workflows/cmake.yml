@@ -36,5 +36,5 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
     - name: Test
-      run: PYTHONPATH=/build:$PYTHONPATH pytest -v test
+      run: PYTHONPATH=build:$PYTHONPATH pytest -v test
       
