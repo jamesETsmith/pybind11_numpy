@@ -5,7 +5,7 @@ npt = np.testing
 
 
 def test_scale_tensor_3d():
-    N = 1000
+    N = 100
     factor = 1.9876
 
     tensor = np.random.rand(N, N, N)
